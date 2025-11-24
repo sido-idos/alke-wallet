@@ -1,0 +1,45 @@
+:root{
+  --primary:#0d6efd; /* azul bootstrap */
+  --accent:#0b7285; /* teal */
+  --bg:#f8f9fa;
+  --muted:#6c757d;
+  --success:#198754;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+}
+body{
+    font-family:var(--font-sans);
+    background:var(--bg);
+    color:#222
+}
+
+.summary-card{
+    background:linear-gradient(90deg,#fff,#f6fbff);
+    border-radius:8px
+}
+
+.card{
+    border:none
+}
+
+h1, h2, h3, h4{
+    font-weight:600;
+    font-style: bold;
+}
+
+h5, h6{
+    font-style: bold;
+}
+
+#saldoMostrar{
+    color:var(--primary);
+    font-size: 2.5rem;
+}
+
+@media (max-width:576px){
+  .summary-card{text-align:center}
+}
+
+.list-group-item .amount{font-weight:600}
+/* Mejoras de UI para tabla de movimientos */
+.tx-type-deposit{color:var(--success)}
+.tx-type-send{color:#d63384}
