@@ -28,20 +28,10 @@ Notas sobre persistencia:
 Logo PNG:
  - El proyecto busca `assets/img/logo.png` para mostrar el logotipo.
  - He incluido un placeholder codificado en base64 en `assets/img/logo.png.base64`.
- - Para generar el PNG (Windows PowerShell), ejecutar desde la carpeta del proyecto:
-
- ```powershell
- [IO.File]::WriteAllBytes('assets/img/logo.png',[Convert]::FromBase64String((Get-Content 'assets/img/logo.png.base64' -Raw)))
- ```
 
  Después de ejecutar ese comando tendrás `assets/img/logo.png` y las páginas mostrarán el logotipo.
 Also lateral logo:
 - He añadido un placeholder base64 para `assets/img/logo_lateral.png` en `assets/img/logo_lateral.png.base64`.
-- Para generar el PNG lateral (PowerShell):
-
-```powershell
-[IO.File]::WriteAllBytes('assets/img/logo_lateral.png',[Convert]::FromBase64String((Get-Content 'assets/img/logo_lateral.png.base64' -Raw)))
-```
 
 Las páginas con navbar usan ahora `assets/img/logo_lateral.png`.
 
